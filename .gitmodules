@@ -1,0 +1,3 @@
+[submodule "lib/DDHidLib"]
+	path = lib/DDHidLib
+	url = https://github.com/Daij-Djan/DDHidLib.git
