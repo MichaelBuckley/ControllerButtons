@@ -1,3 +1,6 @@
 [submodule "lib/DDHidLib"]
 	path = lib/DDHidLib
 	url = https://github.com/Daij-Djan/DDHidLib.git
+[submodule "lib/AutoCoding"]
+	path = lib/AutoCoding
+	url = https://github.com/nicklockwood/AutoCoding.git
