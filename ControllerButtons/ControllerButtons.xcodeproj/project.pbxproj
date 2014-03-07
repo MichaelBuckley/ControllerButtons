@@ -20,7 +20,8 @@
 		3099AA5D18C6A3DA00ADF161 /* ControllerButtonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA5C18C6A3DA00ADF161 /* ControllerButtonsTests.m */; };
 		3099AA6818C6D31800ADF161 /* BTLInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA6718C6D31800ADF161 /* BTLInput.m */; };
 		3099AA6B18C6D56500ADF161 /* BTLStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA6A18C6D56500ADF161 /* BTLStick.m */; };
-		3099AA6E18C6D91B00ADF161 /* BTLJoypad.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA6D18C6D91B00ADF161 /* BTLJoypad.m */; };
+		3099AA6E18C6D91B00ADF161 /* BTLJoypadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA6D18C6D91B00ADF161 /* BTLJoypadConfig.m */; };
+		30EB942018C969EE0021CB70 /* BTLJoypad.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EB941F18C969EE0021CB70 /* BTLJoypad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,10 @@
 		3099AA6718C6D31800ADF161 /* BTLInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLInput.m; sourceTree = "<group>"; };
 		3099AA6918C6D56500ADF161 /* BTLStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLStick.h; sourceTree = "<group>"; };
 		3099AA6A18C6D56500ADF161 /* BTLStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLStick.m; sourceTree = "<group>"; };
-		3099AA6C18C6D91B00ADF161 /* BTLJoypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLJoypad.h; sourceTree = "<group>"; };
-		3099AA6D18C6D91B00ADF161 /* BTLJoypad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLJoypad.m; sourceTree = "<group>"; };
+		3099AA6C18C6D91B00ADF161 /* BTLJoypadConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLJoypadConfig.h; sourceTree = "<group>"; };
+		3099AA6D18C6D91B00ADF161 /* BTLJoypadConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLJoypadConfig.m; sourceTree = "<group>"; };
+		30EB941E18C969ED0021CB70 /* BTLJoypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLJoypad.h; sourceTree = "<group>"; };
+		30EB941F18C969EE0021CB70 /* BTLJoypad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLJoypad.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +131,10 @@
 				3099AA4518C6A3DA00ADF161 /* BTLAppDelegate.m */,
 				3099AA6618C6D31800ADF161 /* BTLInput.h */,
 				3099AA6718C6D31800ADF161 /* BTLInput.m */,
-				3099AA6C18C6D91B00ADF161 /* BTLJoypad.h */,
-				3099AA6D18C6D91B00ADF161 /* BTLJoypad.m */,
+				30EB941E18C969ED0021CB70 /* BTLJoypad.h */,
+				30EB941F18C969EE0021CB70 /* BTLJoypad.m */,
+				3099AA6C18C6D91B00ADF161 /* BTLJoypadConfig.h */,
+				3099AA6D18C6D91B00ADF161 /* BTLJoypadConfig.m */,
 				3099AA6918C6D56500ADF161 /* BTLStick.h */,
 				3099AA6A18C6D56500ADF161 /* BTLStick.m */,
 				3099AA4718C6A3DA00ADF161 /* MainMenu.xib */,
@@ -269,8 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3099AA3F18C6A3DA00ADF161 /* main.m in Sources */,
-				3099AA6E18C6D91B00ADF161 /* BTLJoypad.m in Sources */,
+				3099AA6E18C6D91B00ADF161 /* BTLJoypadConfig.m in Sources */,
 				3099AA6B18C6D56500ADF161 /* BTLStick.m in Sources */,
+				30EB942018C969EE0021CB70 /* BTLJoypad.m in Sources */,
 				3099AA6818C6D31800ADF161 /* BTLInput.m in Sources */,
 				3099AA4618C6A3DA00ADF161 /* BTLAppDelegate.m in Sources */,
 			);
@@ -483,6 +489,7 @@
 				3099AA6218C6A3DA00ADF161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3099AA6318C6A3DA00ADF161 /* Build configuration list for PBXNativeTarget "ControllerButtonsTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +498,7 @@
 				3099AA6518C6A3DA00ADF161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
