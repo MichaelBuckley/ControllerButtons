@@ -14,16 +14,22 @@
 @property (nonatomic, readwrite, copy)   NSArray*        configs;
 @property (nonatomic, readwrite, retain) NSMutableArray* mutableConfigs;
 
+@property (nonatomic, readwrite, retain) DDHidJoystick*  device;
+
 @end
 
 @implementation BTLJoypad
 
-- (instancetype) initWithName: (NSString*) name
+@dynamic numberOfButtons;
+@dynamic numberOfSticks;
+
+- (instancetype) initWithDevice: (DDHidJoystick*) device
 {
-    if (self = [super initWithName: name])
+    if (self = [super initWithName: [device productName]])
     {
         _configs        = [NSArray new];
         _mutableConfigs = [NSMutableArray new];
+        _device         = device;
     }
     
     return self;

@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Michael Buckley. All rights reserved.
 //
 
+#import <DDHidLib/DDHidLib.h>
 #import <XCTest/XCTest.h>
 
 #import "BTLJoypad.h"
