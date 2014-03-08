@@ -21,9 +21,8 @@
 
 - (instancetype) initWithName: (NSString*) name
 {
-    if (self = [super init])
+    if (self = [super initWithName: name])
     {
-        _name    = [name copy];
         _sticks  = [NSMutableArray new];
         _buttons = [NSMutableArray new];
     }

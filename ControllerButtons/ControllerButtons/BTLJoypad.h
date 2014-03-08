@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "BTLNamedObject.h"
+
 @class BTLJoypadConfig;
 
-@interface BTLJoypad : NSObject
+@interface BTLJoypad : BTLNamedObject
 
-@property (nonatomic, readwrite, copy) NSString*        name;
-@property (nonatomic, readonly,  copy) NSArray*         configs;
-@property (nonatomic, readwrite, weak) BTLJoypadConfig* selectedConfig;
+@property (nonatomic, readonly,  copy)   NSArray*   configs;
+@property (nonatomic, readwrite, assign) NSUInteger selectedConfigIndex;
+
+- (void) addConfig:    (BTLJoypadConfig*) config;
+- (void) removeConfig: (BTLJoypadConfig*) config;
 
 @end

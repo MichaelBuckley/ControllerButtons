@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BTLInput : NSObject
+#import "BTLNamedObject.h"
 
-- (instancetype) initWithName: (NSString*) name;
+@interface BTLInput : BTLNamedObject
 
 - (void) keyDown;
 - (void) keyUp;
 
-@property (nonatomic, readwrite, copy)   NSString* name;
 @property (nonatomic, readwrite, assign) CGKeyCode keyCode;
 
 @end

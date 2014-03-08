@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BTLNamedObject.h"
 
 @class BTLInput;
 
-@interface BTLStick : NSObject
+@interface BTLStick : BTLNamedObject
 
-- (instancetype) initWithName: (NSString*) name;
-
-@property (nonatomic, readwrite, copy)   NSString* name;
 @property (nonatomic, readwrite, assign) uint16_t  sensitivity;
 @property (nonatomic, readonly,  retain) BTLInput* up;
 @property (nonatomic, readonly,  retain) BTLInput* down;

@@ -13,9 +13,8 @@
 
 - (instancetype) initWithName: (NSString*) name
 {
-    if (self = [super init])
+    if (self = [super initWithName: name])
     {
-        _name        = [name copy];
         _sensitivity = UINT16_MAX / 2;
         _up          = [[BTLInput alloc] initWithName: NSLocalizedString(@"Up",    nil)];
         _down        = [[BTLInput alloc] initWithName: NSLocalizedString(@"Down",  nil)];

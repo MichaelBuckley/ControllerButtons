@@ -10,16 +10,6 @@
 
 @implementation BTLInput
 
-- (instancetype) initWithName: (NSString*) name
-{
-    if (self = [super init])
-    {
-        _name = [name copy];
-    }
-    
-    return self;
-}
-
 - (void) keyDown
 {
     CGEventPost(kCGHIDEventTap, CGEventCreateKeyboardEvent(NULL, [self keyCode], true));
