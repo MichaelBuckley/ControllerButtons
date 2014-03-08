@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3017BF5618CAA4880033ED27 /* BTLJoypadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3017BF5518CAA4880033ED27 /* BTLJoypadTests.m */; };
+		3017BF6918CAC1580033ED27 /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3017BF6618CAC1270033ED27 /* DDHidLib.framework */; };
+		3017BF6C18CAC1D00033ED27 /* DDHidLib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3017BF6618CAC1270033ED27 /* DDHidLib.framework */; };
 		3099AA3318C6A3DA00ADF161 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099AA3218C6A3DA00ADF161 /* Cocoa.framework */; };
 		3099AA3D18C6A3DA00ADF161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3099AA3B18C6A3DA00ADF161 /* InfoPlist.strings */; };
 		3099AA3F18C6A3DA00ADF161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA3E18C6A3DA00ADF161 /* main.m */; };
@@ -27,6 +29,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3017BF5F18CAC1270033ED27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = HIDBrowser;
+		};
+		3017BF6118CAC1270033ED27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 559CBAE10B5B313000C8FD74;
+			remoteInfo = HIDDeviceTest;
+		};
+		3017BF6318CAC1270033ED27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 559CBBCC0B5B336600C8FD74;
+			remoteInfo = ddhid;
+		};
+		3017BF6518CAC1270033ED27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55193E500B93F2EE004C0C98;
+			remoteInfo = DDHidLib;
+		};
+		3017BF6718CAC1510033ED27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55193E4F0B93F2EE004C0C98;
+			remoteInfo = DDHidLib;
+		};
 		3099AA5418C6A3DA00ADF161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3099AA2718C6A3D900ADF161 /* Project object */;
@@ -36,8 +73,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3017BF6B18CAC1C80033ED27 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3017BF6C18CAC1D00033ED27 /* DDHidLib.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3017BF5518CAA4880033ED27 /* BTLJoypadTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLJoypadTests.m; sourceTree = "<group>"; };
+		3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DDHidLib.xcodeproj; path = ../lib/DDHidLib/DDHidLib.xcodeproj; sourceTree = "<group>"; };
 		3099AA2F18C6A3DA00ADF161 /* ControllerButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3099AA3218C6A3DA00ADF161 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3099AA3518C6A3DA00ADF161 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -75,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3017BF6918CAC1580033ED27 /* DDHidLib.framework in Frameworks */,
 				3099AA3318C6A3DA00ADF161 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,9 +143,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3017BF5818CAC1250033ED27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3017BF6018CAC1270033ED27 /* HIDBrowser.app */,
+				3017BF6218CAC1270033ED27 /* HIDDeviceTest.app */,
+				3017BF6418CAC1270033ED27 /* libddhid.a */,
+				3017BF6618CAC1270033ED27 /* DDHidLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3099AA2618C6A3D900ADF161 = {
 			isa = PBXGroup;
 			children = (
+				3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */,
 				30EB942118C96A7A0021CB70 /* AutoCoding */,
 				3099AA3818C6A3DA00ADF161 /* ControllerButtons */,
 				3099AA5618C6A3DA00ADF161 /* ControllerButtonsTests */,
@@ -202,10 +266,12 @@
 				3099AA2B18C6A3D900ADF161 /* Sources */,
 				3099AA2C18C6A3D900ADF161 /* Frameworks */,
 				3099AA2D18C6A3D900ADF161 /* Resources */,
+				3017BF6B18CAC1C80033ED27 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3017BF6818CAC1510033ED27 /* PBXTargetDependency */,
 			);
 			name = ControllerButtons;
 			productName = ControllerButtons;
@@ -256,6 +322,12 @@
 			mainGroup = 3099AA2618C6A3D900ADF161;
 			productRefGroup = 3099AA3018C6A3DA00ADF161 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3017BF5818CAC1250033ED27 /* Products */;
+					ProjectRef = 3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3099AA2E18C6A3D900ADF161 /* ControllerButtons */,
@@ -263,6 +335,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3017BF6018CAC1270033ED27 /* HIDBrowser.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HIDBrowser.app;
+			remoteRef = 3017BF5F18CAC1270033ED27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3017BF6218CAC1270033ED27 /* HIDDeviceTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HIDDeviceTest.app;
+			remoteRef = 3017BF6118CAC1270033ED27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3017BF6418CAC1270033ED27 /* libddhid.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libddhid.a;
+			remoteRef = 3017BF6318CAC1270033ED27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3017BF6618CAC1270033ED27 /* DDHidLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DDHidLib.framework;
+			remoteRef = 3017BF6518CAC1270033ED27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3099AA2D18C6A3D900ADF161 /* Resources */ = {
@@ -313,6 +416,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3017BF6818CAC1510033ED27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDHidLib;
+			targetProxy = 3017BF6718CAC1510033ED27 /* PBXContainerItemProxy */;
+		};
 		3099AA5518C6A3DA00ADF161 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3099AA2E18C6A3D900ADF161 /* ControllerButtons */;
