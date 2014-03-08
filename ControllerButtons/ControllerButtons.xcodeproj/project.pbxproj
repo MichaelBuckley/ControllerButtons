@@ -10,6 +10,7 @@
 		3017BF5618CAA4880033ED27 /* BTLJoypadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3017BF5518CAA4880033ED27 /* BTLJoypadTests.m */; };
 		3017BF6918CAC1580033ED27 /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3017BF6618CAC1270033ED27 /* DDHidLib.framework */; };
 		3017BF6C18CAC1D00033ED27 /* DDHidLib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3017BF6618CAC1270033ED27 /* DDHidLib.framework */; };
+		3055095318CAC5F000C5AA38 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3055094A18CAC5D000C5AA38 /* OCMock.framework */; };
 		3099AA3318C6A3DA00ADF161 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099AA3218C6A3DA00ADF161 /* Cocoa.framework */; };
 		3099AA3D18C6A3DA00ADF161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3099AA3B18C6A3DA00ADF161 /* InfoPlist.strings */; };
 		3099AA3F18C6A3DA00ADF161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA3E18C6A3DA00ADF161 /* main.m */; };
@@ -23,6 +24,9 @@
 		3099AA6818C6D31800ADF161 /* BTLInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA6718C6D31800ADF161 /* BTLInput.m */; };
 		3099AA6B18C6D56500ADF161 /* BTLStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA6A18C6D56500ADF161 /* BTLStick.m */; };
 		3099AA6E18C6D91B00ADF161 /* BTLJoypadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099AA6D18C6D91B00ADF161 /* BTLJoypadConfig.m */; };
+		30B1E6A618CB9F90004E111E /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3055094A18CAC5D000C5AA38 /* OCMock.framework */; };
+		30B1E6A718CBA357004E111E /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3017BF6618CAC1270033ED27 /* DDHidLib.framework */; };
+		30B1E6A818CBA35C004E111E /* DDHidLib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3017BF6618CAC1270033ED27 /* DDHidLib.framework */; };
 		30EB942018C969EE0021CB70 /* BTLJoypad.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EB941F18C969EE0021CB70 /* BTLJoypad.m */; };
 		30EB942518C96A9A0021CB70 /* AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EB942418C96A9A0021CB70 /* AutoCoding.m */; };
 		30EB942818C96C540021CB70 /* BTLNamedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EB942718C96C540021CB70 /* BTLNamedObject.m */; };
@@ -64,6 +68,41 @@
 			remoteGlobalIDString = 55193E4F0B93F2EE004C0C98;
 			remoteInfo = DDHidLib;
 		};
+		3055094918CAC5D000C5AA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0A814632FD000B04273;
+			remoteInfo = OCMock;
+		};
+		3055094B18CAC5D000C5AA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0C014632FD000B04273;
+			remoteInfo = OCMockTests;
+		};
+		3055094D18CAC5D000C5AA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0DC14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+		3055094F18CAC5D000C5AA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D31108AD1828DB8700737925;
+			remoteInfo = OCMockLibTests;
+		};
+		3055095118CAC5E000C5AA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 030EF0A714632FD000B04273;
+			remoteInfo = OCMock;
+		};
 		3099AA5418C6A3DA00ADF161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3099AA2718C6A3D900ADF161 /* Project object */;
@@ -84,11 +123,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30B1E6A518CB9F88004E111E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30B1E6A818CBA35C004E111E /* DDHidLib.framework in CopyFiles */,
+				30B1E6A618CB9F90004E111E /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3017BF5518CAA4880033ED27 /* BTLJoypadTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLJoypadTests.m; sourceTree = "<group>"; };
 		3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DDHidLib.xcodeproj; path = ../lib/DDHidLib/DDHidLib.xcodeproj; sourceTree = "<group>"; };
+		3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = ../lib/ocmock/Source/OCMock.xcodeproj; sourceTree = "<group>"; };
 		3099AA2F18C6A3DA00ADF161 /* ControllerButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3099AA3218C6A3DA00ADF161 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3099AA3518C6A3DA00ADF161 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -135,6 +186,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B1E6A718CBA357004E111E /* DDHidLib.framework in Frameworks */,
+				3055095318CAC5F000C5AA38 /* OCMock.framework in Frameworks */,
 				3099AA5318C6A3DA00ADF161 /* Cocoa.framework in Frameworks */,
 				3099AA5218C6A3DA00ADF161 /* XCTest.framework in Frameworks */,
 			);
@@ -154,9 +207,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3055093F18CAC5D000C5AA38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3055094A18CAC5D000C5AA38 /* OCMock.framework */,
+				3055094C18CAC5D000C5AA38 /* OCMockTests.octest */,
+				3055094E18CAC5D000C5AA38 /* libOCMock.a */,
+				3055095018CAC5D000C5AA38 /* OCMockLibTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3099AA2618C6A3D900ADF161 = {
 			isa = PBXGroup;
 			children = (
+				3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */,
 				3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */,
 				30EB942118C96A7A0021CB70 /* AutoCoding */,
 				3099AA3818C6A3DA00ADF161 /* ControllerButtons */,
@@ -285,10 +350,12 @@
 				3099AA4C18C6A3DA00ADF161 /* Sources */,
 				3099AA4D18C6A3DA00ADF161 /* Frameworks */,
 				3099AA4E18C6A3DA00ADF161 /* Resources */,
+				30B1E6A518CB9F88004E111E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3055095218CAC5E000C5AA38 /* PBXTargetDependency */,
 				3099AA5518C6A3DA00ADF161 /* PBXTargetDependency */,
 			);
 			name = ControllerButtonsTests;
@@ -327,6 +394,10 @@
 					ProductGroup = 3017BF5818CAC1250033ED27 /* Products */;
 					ProjectRef = 3017BF5718CAC1250033ED27 /* DDHidLib.xcodeproj */;
 				},
+				{
+					ProductGroup = 3055093F18CAC5D000C5AA38 /* Products */;
+					ProjectRef = 3055093E18CAC5D000C5AA38 /* OCMock.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -363,6 +434,34 @@
 			fileType = wrapper.framework;
 			path = DDHidLib.framework;
 			remoteRef = 3017BF6518CAC1270033ED27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3055094A18CAC5D000C5AA38 /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 3055094918CAC5D000C5AA38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3055094C18CAC5D000C5AA38 /* OCMockTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.octest;
+			remoteRef = 3055094B18CAC5D000C5AA38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3055094E18CAC5D000C5AA38 /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = 3055094D18CAC5D000C5AA38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3055095018CAC5D000C5AA38 /* OCMockLibTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockLibTests.octest;
+			remoteRef = 3055094F18CAC5D000C5AA38 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -420,6 +519,11 @@
 			isa = PBXTargetDependency;
 			name = DDHidLib;
 			targetProxy = 3017BF6718CAC1510033ED27 /* PBXContainerItemProxy */;
+		};
+		3055095218CAC5E000C5AA38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCMock;
+			targetProxy = 3055095118CAC5E000C5AA38 /* PBXContainerItemProxy */;
 		};
 		3099AA5518C6A3DA00ADF161 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -537,6 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = ../lib/DDHidLib/build/$CONFIGURATION;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ControllerButtons/ControllerButtons-Prefix.pch";
 				INFOPLIST_FILE = "ControllerButtons/ControllerButtons-Info.plist";
@@ -550,6 +655,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = ../lib/DDHidLib/build/$CONFIGURATION;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ControllerButtons/ControllerButtons-Prefix.pch";
 				INFOPLIST_FILE = "ControllerButtons/ControllerButtons-Info.plist";
@@ -566,6 +672,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					../lib/DDHidLib/build/$CONFIGURATION,
+					../lib/ocmock/Source/build/$CONFIGURATION,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ControllerButtons/ControllerButtons-Prefix.pch";
@@ -574,6 +682,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ControllerButtonsTests/ControllerButtonsTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -588,10 +697,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					../lib/DDHidLib/build/$CONFIGURATION,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ControllerButtons/ControllerButtons-Prefix.pch";
 				INFOPLIST_FILE = "ControllerButtonsTests/ControllerButtonsTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

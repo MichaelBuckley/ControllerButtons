@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Michael Buckley. All rights reserved.
 //
 
-#import <DDHidLib/DDHidLib.h>
+#import <OCMock/OCMock.h>
 #import <XCTest/XCTest.h>
 
 #import "BTLJoypad.h"
@@ -20,7 +20,12 @@
 
 - (void)testAddRemoveConfig
 {
-    BTLJoypad*       joypad  = [[BTLJoypad alloc]       initWithName:   @"Test Joypad"];
+    id device = [OCMockObject mockForClass: [DDHidJoystick class]];
+    [[[device stub] andReturn: @"Test Joypad"] productName];
+    [[[device stub] andReturnValue: @(4)] numberOfButtons];
+    [[[device stub] andReturnValue: @(1)] countOfSticks];
+    
+    BTLJoypad*       joypad  = [[BTLJoypad alloc] initWithDevice: device];
     BTLJoypadConfig* config1 = [[BTLJoypadConfig alloc] initWithName: @"Test Config 1"];
     BTLJoypadConfig* config2 = [[BTLJoypadConfig alloc] initWithName: @"Test Config 2"];
     
@@ -40,7 +45,12 @@
 
 - (void) testCreateDefaultConfig
 {
-    BTLJoypad* joypad = [[BTLJoypad alloc] initWithName: @"Test Joypad"];
+    id device = [OCMockObject mockForClass: [DDHidJoystick class]];
+    [[[device stub] andReturn: @"Test Joypad"] productName];
+    [[[device stub] andReturnValue: @(4)] numberOfButtons];
+    [[[device stub] andReturnValue: @(1)] countOfSticks];
+    
+    BTLJoypad*       joypad  = [[BTLJoypad alloc] initWithDevice: device];
     
     XCTAssertEqual([[joypad configs] count], (NSUInteger) 1, @"");
 }

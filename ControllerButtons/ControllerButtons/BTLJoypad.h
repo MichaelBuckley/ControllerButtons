@@ -23,7 +23,7 @@
 @property (nonatomic, readonly,  copy)   NSArray*   configs;
 @property (nonatomic, readwrite, assign) NSUInteger selectedConfigIndex;
 
-@property (nonatomic, readonly,  assign) NSUInteger numberOfButtons;
-@property (nonatomic, readonly,  assign) NSUInteger numberOfSticks;
+@property (nonatomic, readonly,  assign) unsigned   numberOfButtons;
+@property (nonatomic, readonly,  assign) unsigned   numberOfSticks;
 
 @end
